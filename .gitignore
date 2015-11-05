@@ -1,5 +1,5 @@
 node_modules/
-client/jspm_packages
+app/jspm_packages
 typings/
 !config.js
 *.js

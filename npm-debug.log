@@ -1,0 +1,197 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gulp.plugin.zsh' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'gulp.plugin.zsh', null ]
+7 verbose cache add spec gulp.plugin.zsh
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'gulp.plugin.zsh',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gulp.plugin.zsh',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed gulp.plugin.zsh@*
+10 verbose addNamed "*" is a valid semver range for gulp.plugin.zsh
+11 silly addNameRange { name: 'gulp.plugin.zsh', range: '*', hasData: false }
+12 silly mapToRegistry name gulp.plugin.zsh
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gulp.plugin.zsh
+16 verbose addNameRange registry:https://registry.npmjs.org/gulp.plugin.zsh not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gulp.plugin.zsh
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 18:09:51
+20 verbose request id a1847c4ce7245ee3
+21 http request GET https://registry.npmjs.org/gulp.plugin.zsh
+22 http 200 https://registry.npmjs.org/gulp.plugin.zsh
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"80LHGOXFOSPLZZPAA0BF45RPS"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=60',
+23 verbose headers   'content-length': '4133',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Thu, 05 Nov 2015 17:09:50 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1446743390.859412,VS0,VE93',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"80LHGOXFOSPLZZPAA0BF45RPS"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '4133',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Thu, 05 Nov 2015 17:09:50 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lcy1123-LCY',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1446743390.859412,VS0,VE93',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving gulp.plugin.zsh to /home/sarod/.npm/registry.npmjs.org/gulp.plugin.zsh/.cache.json
+26 silly addNameRange number 2 { name: 'gulp.plugin.zsh', range: '*', hasData: true }
+27 silly addNameRange versions [ 'gulp.plugin.zsh', [ '1.0.0', '1.0.1' ] ]
+28 silly addNamed gulp.plugin.zsh@1.0.1
+29 verbose addNamed "1.0.1" is a plain semver version for gulp.plugin.zsh
+30 silly mapToRegistry name gulp.plugin.zsh
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/gulp.plugin.zsh
+34 verbose addRemoteTarball https://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz',
+35 verbose addRemoteTarball   '8b968fc443790167e4016555142521baf3099cc9' ]
+36 info retry fetch attempt 1 at 18:09:52
+37 info attempt registry request try #1 at 18:09:52
+38 http fetch GET https://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz
+39 http fetch 200 https://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz
+40 silly fetchAndShaCheck shasum 8b968fc443790167e4016555142521baf3099cc9
+41 verbose addTmpTarball /tmp/npm-28749-0486fe31/registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for gulp.plugin.zsh@1.0.1
+43 silly cache afterAdd gulp.plugin.zsh@1.0.1
+44 verbose afterAdd /home/sarod/.npm/gulp.plugin.zsh/1.0.1/package/package.json not in flight; writing
+45 verbose afterAdd /home/sarod/.npm/gulp.plugin.zsh/1.0.1/package/package.json written
+46 silly install resolved [ { name: 'gulp.plugin.zsh',
+46 silly install resolved     version: '1.0.1',
+46 silly install resolved     description: 'Autocompletion support for your gulp.js tasks (zsh).',
+46 silly install resolved     author: { name: 'André König', email: 'andre.koenig@posteo.de' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     scripts: { postinstall: 'DEST=$HOME/.gulp.plugin.zsh; mkdir -p $DEST && ln -fs "$PWD/gulp.plugin.zsh" $DEST/gulp.plugin.zsh && echo source $DEST/gulp.plugin.zsh >> $HOME/.zshrc && echo "All done! Please restart your zsh.\n\n"' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/akoenig/gulp.plugin.zsh.git' },
+46 silly install resolved     keywords: [ 'zsh', 'shell', 'autocompletion', 'gulp' ],
+46 silly install resolved     bugs: { url: 'https://github.com/akoenig/gulp.plugin.zsh/issues' },
+46 silly install resolved     homepage: 'https://github.com/akoenig/gulp.plugin.zsh',
+46 silly install resolved     gitHead: '7e4e6165300551c33d9b42921a0f1ccacfa8a769',
+46 silly install resolved     _id: 'gulp.plugin.zsh@1.0.1',
+46 silly install resolved     _shasum: '8b968fc443790167e4016555142521baf3099cc9',
+46 silly install resolved     _from: 'gulp.plugin.zsh@*',
+46 silly install resolved     _npmVersion: '2.11.3',
+46 silly install resolved     _nodeVersion: '2.3.1',
+46 silly install resolved     _npmUser: { name: 'akoenig', email: 'akoenig@posteo.de' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '8b968fc443790167e4016555142521baf3099cc9',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp.plugin.zsh/-/gulp.plugin.zsh-1.0.1.tgz' } ]
+47 info install gulp.plugin.zsh@1.0.1 into /usr/lib
+48 info installOne gulp.plugin.zsh@1.0.1
+49 verbose installOne of gulp.plugin.zsh to /usr/lib not in flight; installing
+50 verbose lock using /home/sarod/.npm/_locks/gulp-plugin-zsh-5eee6b98d5868c64.lock for /usr/lib/node_modules/gulp.plugin.zsh
+51 silly install write writing gulp.plugin.zsh 1.0.1 to /usr/lib/node_modules/gulp.plugin.zsh
+52 verbose unbuild lib/node_modules/gulp.plugin.zsh
+53 silly gentlyRm /usr/lib/node_modules/gulp.plugin.zsh is being purged from base /usr
+54 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/gulp.plugin.zsh
+55 verbose tar unpack /home/sarod/.npm/gulp.plugin.zsh/1.0.1/package.tgz
+56 verbose tar unpacking to /usr/lib/node_modules/gulp.plugin.zsh
+57 silly gentlyRm /usr/lib/node_modules/gulp.plugin.zsh is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/gulp.plugin.zsh
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+62 silly gunzTarPerm extractEntry changelog.md
+63 silly gunzTarPerm modified mode [ 'changelog.md', 436, 420 ]
+64 silly gunzTarPerm extractEntry gulp.plugin.zsh
+65 silly gunzTarPerm modified mode [ 'gulp.plugin.zsh', 509, 493 ]
+66 silly gunzTarPerm extractEntry readme.md
+67 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+68 verbose write writing to /usr/lib/node_modules/gulp.plugin.zsh/package.json
+69 info preinstall gulp.plugin.zsh@1.0.1
+70 verbose readDependencies loading dependencies from /usr/lib/node_modules/gulp.plugin.zsh/package.json
+71 verbose readDependencies loading dependencies from /usr/lib/node_modules/gulp.plugin.zsh/package.json
+72 silly install resolved []
+73 verbose about to build /usr/lib/node_modules/gulp.plugin.zsh
+74 info build /usr/lib/node_modules/gulp.plugin.zsh
+75 info linkStuff gulp.plugin.zsh@1.0.1
+76 silly linkStuff gulp.plugin.zsh@1.0.1 has /usr/lib/node_modules as its parent node_modules
+77 silly linkStuff gulp.plugin.zsh@1.0.1 is part of a global install
+78 silly linkStuff gulp.plugin.zsh@1.0.1 is installed into a global node_modules
+79 silly linkStuff gulp.plugin.zsh@1.0.1 is installed into the top-level global node_modules
+80 verbose linkBins gulp.plugin.zsh@1.0.1
+81 verbose linkMans gulp.plugin.zsh@1.0.1
+82 verbose rebuildBundles gulp.plugin.zsh@1.0.1
+83 info install gulp.plugin.zsh@1.0.1
+84 info postinstall gulp.plugin.zsh@1.0.1
+85 verbose unsafe-perm in lifecycle false
+86 info gulp.plugin.zsh@1.0.1 Failed to exec postinstall script
+87 verbose unlock done using /home/sarod/.npm/_locks/gulp-plugin-zsh-5eee6b98d5868c64.lock for /usr/lib/node_modules/gulp.plugin.zsh
+88 verbose stack Error: gulp.plugin.zsh@1.0.1 postinstall: `DEST=$HOME/.gulp.plugin.zsh; mkdir -p $DEST && ln -fs "$PWD/gulp.plugin.zsh" $DEST/gulp.plugin.zsh && echo source $DEST/gulp.plugin.zsh >> $HOME/.zshrc && echo "All done! Please restart your zsh.
+88 verbose stack
+88 verbose stack "`
+88 verbose stack Exit status 1
+88 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+88 verbose stack     at emitTwo (events.js:87:13)
+88 verbose stack     at EventEmitter.emit (events.js:172:7)
+88 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+88 verbose stack     at emitTwo (events.js:87:13)
+88 verbose stack     at ChildProcess.emit (events.js:172:7)
+88 verbose stack     at maybeClose (internal/child_process.js:818:16)
+88 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+89 verbose pkgid gulp.plugin.zsh@1.0.1
+90 verbose cwd /home/sarod/dev/git/angular-ts-jspm
+91 error Linux 3.13.0-66-generic
+92 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "gulp.plugin.zsh"
+93 error node v4.2.1
+94 error npm  v2.14.7
+95 error code ELIFECYCLE
+96 error gulp.plugin.zsh@1.0.1 postinstall: `DEST=$HOME/.gulp.plugin.zsh; mkdir -p $DEST && ln -fs "$PWD/gulp.plugin.zsh" $DEST/gulp.plugin.zsh && echo source $DEST/gulp.plugin.zsh >> $HOME/.zshrc && echo "All done! Please restart your zsh.
+96 error
+96 error "`
+96 error Exit status 1
+97 error Failed at the gulp.plugin.zsh@1.0.1 postinstall script 'DEST=$HOME/.gulp.plugin.zsh; mkdir -p $DEST && ln -fs "$PWD/gulp.plugin.zsh" $DEST/gulp.plugin.zsh && echo source $DEST/gulp.plugin.zsh >> $HOME/.zshrc && echo "All done! Please restart your zsh.
+97 error
+97 error "'.
+97 error This is most likely a problem with the gulp.plugin.zsh package,
+97 error not with npm itself.
+97 error Tell the author that this fails on your system:
+97 error     DEST=$HOME/.gulp.plugin.zsh; mkdir -p $DEST && ln -fs "$PWD/gulp.plugin.zsh" $DEST/gulp.plugin.zsh && echo source $DEST/gulp.plugin.zsh >> $HOME/.zshrc && echo "All done! Please restart your zsh.
+97 error
+97 error "
+97 error You can get their info via:
+97 error     npm owner ls gulp.plugin.zsh
+97 error There is likely additional logging output above.
+98 verbose exit [ 1, true ]
+99 verbose unbuild lib/node_modules/gulp.plugin.zsh
+100 info preuninstall gulp.plugin.zsh@1.0.1
+101 info uninstall gulp.plugin.zsh@1.0.1
+102 verbose unbuild rmStuff gulp.plugin.zsh@1.0.1 from /usr/lib/node_modules
+103 info postuninstall gulp.plugin.zsh@1.0.1
+104 silly gentlyRm /usr/lib/node_modules/gulp.plugin.zsh is being purged from base /usr
+105 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/gulp.plugin.zsh
+106 silly vacuum-fs purging /usr/lib/node_modules/gulp.plugin.zsh
+107 silly vacuum-fs quitting because other entries in /usr/lib/node_modules

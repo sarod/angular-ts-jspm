@@ -1,4 +1,6 @@
-<div layout="column" style="height:500px;" ng-cloak layout-fill>
+{{vm.appName}} is a dummy application with a side nav.
+     
+<!--<div layout="column" style="height:500px;" ng-cloak layout-fill>
   <section layout="row" flex>
     <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
       <my-side-nav></my-side-nav>
@@ -6,13 +8,14 @@
     <md-content flex layout-padding>
       <div layout="column" layout-fill layout-align="top center">
         <p>
-        The left sidenav will 'lock open' on a medium (>=960px wide) device.
+        {{vm.appName}} is a dummy application with a side nav.
         </p>
         <div>
           <md-button ng-click="vm.toggleLeft()"
             class="md-primary" hide-gt-md>
             Toggle left
           </md-button>
+          <md-button ng-click="vm.buttonClicked()" class="md-primary">click Me</md-button>
         </div>
       </div>
       <div flex></div>
@@ -20,3 +23,4 @@
   </section>
 </div>
 
+-->
