@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "watch": true,
+    "module": "system",
+    "sourceMap": true
+  },
+  "exclude": [
+    "gulpfile.js",
+    "node_modules",        
+    "client/jspm_packages"
+  ]
+}
