@@ -12,10 +12,12 @@ class DummyController {
 export default function registerDummyDirective(appModule: angular.IModule) {
 	appModule.directive('dummy', function(): angular.IDirective {
 		return {
-			restrict: 'E',
-			templateUrl: './dummy/dummy.html',
+			bindToController: {},
 			controller: DummyController,
-			controllerAs: 'vm'
+			controllerAs: 'vm',
+			templateUrl: './dummy/dummy.html',
+			restrict: 'E',
+			scope: {}
 		};
 	});
 }

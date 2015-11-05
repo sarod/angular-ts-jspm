@@ -3,7 +3,6 @@ import * as ng from 'angular';
 
 class MyAppController {
 
-
 	public appName: string = 'MyApp';
 
 	constructor(private $mdSidenav: angular.material.ISidenavService, private $log: angular.ILogService) {
@@ -22,13 +21,15 @@ class MyAppController {
 
 
 export default function registerMyApp(appModule: ng.IModule) {
-	appModule.controller('MyAppControler', MyAppController);
+	appModule.controller('MyAppController', MyAppController);
 	appModule.directive('myApp', function(): ng.IDirective {
 		return {
+			bindToController: {},
+			controller: 'MyAppController',
+			controllerAs: 'vm',
+			templateUrl: './my-app/my-app.html',
 			restrict: 'E',
-      templateUrl: './my-app/my-app.html',
-			controller: MyAppController,
-			controllerAs: 'vm'
+			scope: {}
 		};
 	});
 }

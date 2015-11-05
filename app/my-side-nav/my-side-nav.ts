@@ -17,10 +17,12 @@ class MySideNavController {
 
 function directiveFactory(): ng.IDirective {
 	return {
-		restrict: 'E',
-		templateUrl: './my-side-nav/my-side-nav.html',
+		bindToController: {},
 		controller: 'MySideNavController',
-		controllerAs: 'vm'
+		controllerAs: 'vm',
+		templateUrl: './my-side-nav/my-side-nav.html',
+		restrict: 'E',
+		scope: {}
 	};
 }
 
