@@ -8,8 +8,7 @@ class DummyController {
 	}
 }
 
-
-export default function registerDummyDirective(appModule: angular.IModule) {
+export default function registerDummyDirective(appModule: angular.IModule): void {
 	appModule.directive('dummy', function(): angular.IDirective {
 		return {
 			bindToController: {},

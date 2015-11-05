@@ -7,7 +7,7 @@ let appModule = angular.module('my-app', []);
 registerDummyDirective(appModule);
 
 // bootstrap angular manually on whole document
-angular.element(document).ready(function() {
+angular.element(document).ready(function(): void {
 	angular.bootstrap(document, ['my-app']);
 });
 

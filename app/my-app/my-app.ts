@@ -9,7 +9,7 @@ class MyAppController {
 		$log.log('MyAppController created');
 	}
 
-	public toggleLeft() {
+	public toggleLeft(): void {
 		this.$mdSidenav('left').toggle();
 	}
 

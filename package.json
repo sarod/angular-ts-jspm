@@ -10,7 +10,7 @@
     "tsd": "^0.6.5",
     "tslint": "^2.5.1",
     "typescript": "^1.6.2",
-		"gulp-tslint": "^3.5.0"
+    "gulp-tslint": "^3.5.0"
   },
   "scripts": {
     "postinstall": "jspm install && tsd install"
@@ -35,5 +35,9 @@
       "normalize.css": "github:necolas/normalize.css@^3.0.3",
       "text": "github:systemjs/plugin-text@^0.0.3"
     }
+  },
+  "devDependencies": {
+    "gulp-tsc": "^1.1.4",
+    "gulp-typescript": "^2.9.2"
   }
 }
