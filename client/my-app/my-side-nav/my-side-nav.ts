@@ -16,14 +16,18 @@ class MySideNavController {
 }
 
 
-export default function register(appModule : ng.IModule) {
-    appModule.controller("MySideNavController", MySideNavController);
-    appModule.directive('mySideNav', function(): angular.IDirective {
+function  directiveFactory(): angular.IDirective {
         return {
             restrict: 'E',
             templateUrl: "./my-app/my-side-nav/my-side-nav.html",
             controller: 'MySideNavController',
             controllerAs: 'vm'
         };
-    });
+    }
+
+
+
+function registerMySideNav(appModule : ng.IModule) {
+    appModule.controller("MySideNavController", MySideNavController);
+    appModule.directive('mySideNav', directiveFactory);
 }

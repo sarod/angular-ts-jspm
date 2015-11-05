@@ -1,13 +1,13 @@
-import * as angular from "angular";
+import * as ng from "angular";
 
+import "normalize.css";
 import "angular-material/angular-material.css!";
 import "angular-material";
-import "normalize.css";
 
 
-import registerMySideNav from "my-app/my-side-nav/my-side-nav";
 
-let myAppModule = angular.module("myApp", ["ngMaterial"]);
+
+let myAppModule = ng.module("myApp", ["ngMaterial"]);
 
 registerMySideNav(myAppModule);
 
@@ -30,7 +30,7 @@ class MyAppController {
 
 
 myAppModule.controller("MyAppControler", MyAppController);
-myAppModule.directive('myApp', function(): angular.IDirective {
+myAppModule.directive('myApp', function(): ng.IDirective {
 	return {
 		restrict: 'E',
 		templateUrl: './my-app/my-app.html',
@@ -42,8 +42,8 @@ myAppModule.directive('myApp', function(): angular.IDirective {
 
 
 // Bootstrap angular manually on whole document
-angular.element(document).ready(function() {
-    angular.bootstrap(document, ["myApp"]);
+ng.element(document).ready(function() {
+    ng.bootstrap(document, ["myApp"]);
 });
 
 
