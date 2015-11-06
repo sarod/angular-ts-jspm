@@ -14,13 +14,13 @@ class MyAppController {
 	}
 
 
-	public handleButtonClick() {
+	public handleButtonClick(): void {
 		this.$log.log('Button Clicked');
 	}
 }
 
 
-export default function registerMyApp(appModule: ng.IModule) {
+export default function registerMyApp(appModule: ng.IModule): void {
 	appModule.controller('MyAppController', MyAppController);
 	appModule.directive('myApp', function(): ng.IDirective {
 		return {

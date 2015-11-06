@@ -2,6 +2,8 @@
 import * as ng from 'angular';
 class MySideNavController {
 
+	public name: string;
+
 	constructor(private $mdSidenav: angular.material.ISidenavService, private $log: angular.ILogService) {
 
 		$log.log('MySideNavController created');
@@ -11,22 +13,18 @@ class MySideNavController {
 	public close(): void {
 		this.$mdSidenav('left').close();
 	}
-
 }
 
-
-function directiveFactory(): ng.IDirective {
-	return {
-		bindToController: {},
-		controller: 'MySideNavController',
-		controllerAs: 'vm',
-		templateUrl: './my-side-nav/my-side-nav.html',
-		restrict: 'E',
-		scope: {}
-	};
-}
-
-export default function registerMySideNav(appModule: ng.IModule) {
+export default function registerMySideNav(appModule: ng.IModule): void {
 	appModule.controller('MySideNavController', MySideNavController);
-	appModule.directive('mySideNav', directiveFactory);
+	appModule.directive('mySideNav', function(): ng.IDirective {
+		return {
+			bindToController: {},
+			controller: 'MySideNavController',
+			controllerAs: 'vm',
+			templateUrl: './my-side-nav/my-side-nav.html',
+			restrict: 'E',
+			scope: {}
+		};
+	});
 }

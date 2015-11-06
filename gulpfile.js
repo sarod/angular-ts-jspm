@@ -1,8 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-const url = require('url');
-const typescript = require('gulp-typescript');
-const tslint = require('gulp-tslint');
+
 
 
 
@@ -22,6 +20,7 @@ const allFiles = staticResourcesExtensions.map(all);
 
 
 // Static server
+const url = require('url');
 gulp.task('serve', function () {
 	browserSync.init({
 		port: 8000,
@@ -49,9 +48,15 @@ const srcTsFiles = ['app/**/*.ts', '!app/jspm_packages/**/*.ts'];
 
 gulp.task('watch', ['tslint', 'compile', 'doWatch']);
 
+gulp.task('default', ['tslint', 'compile']);
+
+
+const tslint = require('gulp-tslint');
+const typescript = require('gulp-typescript');
 gulp.task('doWatch', function () {
 	gulp.watch(srcTsFiles, ['tslint', 'compile']);
 });
+
 
 gulp.task('tslint', function () {
 	return gulp.src(srcTsFiles)
@@ -62,8 +67,8 @@ gulp.task('tslint', function () {
 		}));
 });
 
-var tsProject = typescript.createProject('tsconfig.json');
 
+var tsProject = typescript.createProject('tsconfig.json');
 gulp.task('compile', function () {
   tsProject.src()
     .pipe(typescript(tsProject, undefined, typescript.reporter.longReporter()))
