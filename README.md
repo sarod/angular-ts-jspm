@@ -1,4 +1,5 @@
-This project is a sandbox to find ways to use together:
+
+Starter project for using
 * TypeScript
 * AngularJS 1.x
-* JSPM
+* ES6 modules syntax with jspm
